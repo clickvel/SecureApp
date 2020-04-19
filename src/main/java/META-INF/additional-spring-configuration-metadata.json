@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "security.oauth2.client.clientId",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.client.clientId'"
+  },
+  {
+    "name": "security.oauth2.client.accessTokenUri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.client.accessTokenUri'"
+  }
+]}
