@@ -10,8 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 public class UserPrincipal implements UserDetails {
 
   private User user;
-  
-  
+
   public UserPrincipal(User user) {
     super();
     this.user = user;
@@ -19,10 +18,9 @@ public class UserPrincipal implements UserDetails {
 
   @Override public Collection<? extends GrantedAuthority> getAuthorities() {
     // TODO Auto-generated method stub
-    
-    return  Collections.singleton(new SimpleGrantedAuthority("USER"));
-    
-   
+
+    return Collections.singleton(new SimpleGrantedAuthority("USER"));
+
   }
 
   @Override public String getPassword() {
@@ -37,7 +35,7 @@ public class UserPrincipal implements UserDetails {
 
   @Override public boolean isAccountNonExpired() {
     // TODO Auto-generated method stub
-     return true;
+    return true;
   }
 
   @Override public boolean isAccountNonLocked() {
